@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+html {
+  color-scheme: light;
+  @include mat.theme((
+          color: mat.$cyan-palette,
+          typography: Roboto,
+          density: 0
+  ));
+}
+
+.light {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root {
+  @include mat.card-overrides((
+          outlined-container-shape: 25px,
+  ));
+}
