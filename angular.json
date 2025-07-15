@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": {"dist/ng-deploy"},
+            "outputPath": "dist/running-calculator",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
