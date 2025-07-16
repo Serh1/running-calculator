@@ -88,7 +88,14 @@ import {MatIcon} from "@angular/material/icon";
         align-items: center;
         gap: 2rem;
       }
-
+      @media (max-width: 600px) {
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+      }
       .label {
         display: flex;
         flex-direction: column;
