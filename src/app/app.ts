@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import {PaceConvertor} from "./pace-convertor/pace-convertor";
 import {PaceCalculator} from "./pace-calculator/pace-calculator";
+import {HrZonesCalculator} from "./hr-zones-calculator/hr-zones-calculator";
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import {PaceCalculator} from "./pace-calculator/pace-calculator";
     MatButtonModule,
     PaceConvertor,
     PaceCalculator,
+    HrZonesCalculator,
   ],
   template: `
     <main class="main">
@@ -37,6 +39,7 @@ import {PaceCalculator} from "./pace-calculator/pace-calculator";
        
         <app-pace-convertor></app-pace-convertor>
         <app-pace-calculator></app-pace-calculator>
+        <app-hr-zones-calculator></app-hr-zones-calculator>
       </div>
     </main>
     <router-outlet></router-outlet>
