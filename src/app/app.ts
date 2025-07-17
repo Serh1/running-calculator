@@ -24,22 +24,24 @@ import {PaceCalculator} from "./pace-calculator/pace-calculator";
     PaceCalculator,
   ],
   template: `
-    <main class="main">
-      <div class="content">
-        <h1>Welcome to {{ title }}!</h1>
-        <button
-            matMiniFab
-            aria-label="Swap conversion direction"
-            (click)="switchTheme()"
-        >
-          <mat-icon>{{ currentTheme === 'light' ? "bedtime" : "sunny" }}</mat-icon>
-        </button>
-       
-        <app-pace-convertor></app-pace-convertor>
-        <app-pace-calculator></app-pace-calculator>
-      </div>
-    </main>
-    <router-outlet></router-outlet>
+      <main class="main">
+          <div class="content">
+              <div style="display:flex; align-items: center; justify-content: space-between">
+                  <h2>Running calculators</h2>
+                  <button
+                          matMiniFab
+                          aria-label="Swap conversion direction"
+                          (click)="switchTheme()"
+                  >
+                      <mat-icon>{{ currentTheme === 'light' ? "bedtime" : "sunny" }}</mat-icon>
+                  </button>
+              </div>
+
+              <app-pace-calculator></app-pace-calculator>
+              <app-pace-convertor></app-pace-convertor>
+          </div>
+      </main>
+      <router-outlet></router-outlet>
   `,
   styles: [`
     

@@ -35,7 +35,8 @@ body {
   @include mat.fab-overrides((
           small-container-shape: 40px,
   ));
-  .mat-mdc-mini-fab{
+
+  .mat-mdc-mini-fab {
     box-shadow: none !important;
   }
 }
@@ -63,8 +64,13 @@ main {
   max-width: 500px;
 }
 
+.mat-mdc-chip-set .mdc-evolution-chip-set__chips{
+  margin: 0 !important;
+}
+
 .mat-mdc-card-content {
   display: flex !important;
+  padding: 0 !important;
 }
 
 .convert-card {
@@ -90,6 +96,9 @@ main {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+  }
+  .input-field {
+    width: 40px;
   }
 }
 

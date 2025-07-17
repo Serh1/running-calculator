@@ -46,8 +46,7 @@ import {MatIcon} from "@angular/material/icon";
                                 placeholder="0.00"
                         />
                     </mat-form-field>
-                   
-
+                    
                     <mat-form-field appearance="fill" class="input-field">
                         <mat-label>Time</mat-label>
                         <span matSuffix>hh:mm:ss</span>
